@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Services Publiques</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body style="font-family: 'Roboto', Arial, sans-serif">
+
+  <h1 class="text-center bg-primary py-0 py-sm-3 text-light">SERVICES PUBLICS</h1>
+
+  <main class="container mt-3">
+
+    <form class="columns mb-3 d-flex flex-column align-items-center">
+
+      <div class="form-group column col-sm-6">
+        <label for="departement">Choisissez votre département</label>
+        <select class="form-control" id="departement">
+        </select>
+      </div>
+
+      <div class="form-group column col-sm-6">
+        <label for="etablissement">Choisissez le service</label>
+        <select class="form-control" id="etablissement">
+          <option value="cci">CCI</option>
+          <option value="commissariat_police">Commissariat</option>
+          <option value="gendarmerie">Gendarmerie</option>
+          <option value="mairie">Mairie</option>
+          <option value="sie">Impôts (Entreprises)</option>
+          <option value="sip">Impôts (Particuliers)</option>
+        </select>
+      </div>
+
+      <button class="column col-6 col-sm-4 col-lg-2 btn btn-primary" id="btn-recherche">Rechercher</button>
+    </form>
+
+    <div class="container result">
+
+      <form class="columns d-flex justify-content-center mb-3">
+        <input class="form-control column col col-sm-6 text-center filter-results" type="text" placeholder="Affinez votre recherche" max-length="150">
+      </form>
+
+    </div>
+
+
+    <ul class="list-group" id="affichage">
+    </ul>
+
+    <p class="text-danger" id="info"></p>
+
+  </main>
+
+  <script src="annuaire.js"></script>
+</body>
+</html>
