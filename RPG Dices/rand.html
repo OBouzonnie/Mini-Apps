@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rand.css">
+    <script src="rand.js" defer></script>
+    <title>RPG Dices</title>
+</head>
+<body>
+    
+    <main>
+
+        <div class="glass-container">
+            <div class="title">
+                <h2>How many dices ?</h2>
+            </div>
+            <form>
+                <div class="dice4">
+                    <label for="dice4"><span>4</span> faces</label>
+                    <input type="number" id="dice4" placeholder="0" min="0" max="100">
+                </div>
+                <div class="dice6">
+                    <label for="dice6"><span>6</span> faces</label>
+                    <input type="number" id="dice6" placeholder="0" min="0" max="100">
+                </div>
+                <div class="dice8">
+                    <label for="dice8"><span>8</span> faces</label>
+                    <input type="number" id="dice8" placeholder="0" min="0" max="100">
+                </div>
+                <div class="dice10">
+                    <label for="dice10"><span>10</span> faces</label>
+                    <input type="number" id="dice10" placeholder="0" min="0" max="100">
+                </div>
+                <div class="dice12">
+                    <label for="dice12"><span>12</span> faces</label>
+                    <input type="number" id="dice12" placeholder="0" min="0" max="100">
+                </div>
+                <div class="dice20">
+                    <label for="dice20"><span>20</span> faces</label>
+                    <input type="number" id="dice20" placeholder="0" min="0" max="100">
+                </div>
+                <div class="dice100">
+                    <label for="dice100"><span>100</span> faces</label>
+                    <input type="number" id="dice100" placeholder="0" min="0" max="100">
+                </div>
+                <div class="btn">
+                    <button id="roll">Roll</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </form>
+
+            <div class="results">
+                <div class="result-text">
+                    <h2>Results</h2>
+                    <p class="show-result"></p>
+                </div>
+                <button class="get-dice">See</button>
+            </div>
+
+        </div>
+
+        <div class="dice-single-values">
+            <div>
+                <ul class="dice-val">
+    
+                </ul>
+                <button class="ok">OK</button>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
