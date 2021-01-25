@@ -1,3 +1,3 @@
 # Mini-Apps
 
-Small Apps written for the fun.
+Petites applis écritent pour le fun
